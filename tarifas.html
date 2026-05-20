@@ -7,12 +7,21 @@
     <meta name="description" content="Precios y tarifas de Campón Asesores. Planes para autónomos y PYMES.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary: #004080; --primary-dark: #003366; --secondary: #0066cc; --accent: #ffc107; --text: #333; --bg: #f8f9fa; --white: #fff; --shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        :root {
+            --primary: #004080;
+            --primary-dark: #003366;
+            --secondary: #0066cc;
+            --accent: #ffc107;
+            --text: #333;
+            --bg: #f8f9fa;
+            --white: #fff;
+            --shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
         
-        /* Header */
+        /* Header Consistente */
         header { background: var(--white); box-shadow: var(--shadow); position: sticky; top: 0; z-index: 1000; }
         .header-top { background: var(--primary); color: var(--white); padding: 0.5rem 0; text-align: center; font-size: 0.9rem; }
         .header-top a { color: var(--white); text-decoration: none; margin: 0 0.5rem; }
@@ -23,14 +32,22 @@
         .nav-links a:hover { color: var(--primary); }
         .btn-primary { background: var(--primary); color: var(--white) !important; padding: 0.5rem 1.2rem; border-radius: 5px; }
         
-        /* Hero */
         .hero { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: var(--white); padding: 3rem 0; text-align: center; }
         .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
         
-        /* Pricing */
+        /* Pricing Grid */
         .pricing-section { padding: 4rem 0; }
         .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
-        .price-card { background: var(--white); border-radius: 15px; box-shadow: var(--shadow); padding: 2.5rem; text-align: center; transition: transform 0.3s; position: relative; overflow: hidden; }
+        .price-card { 
+            background: var(--white); 
+            border-radius: 15px; 
+            box-shadow: var(--shadow); 
+            padding: 2.5rem; 
+            text-align: center; 
+            transition: transform 0.3s; 
+            position: relative; 
+            overflow: hidden; 
+        }
         .price-card:hover { transform: translateY(-10px); }
         .price-card.featured { border: 2px solid var(--primary); }
         .price-card.featured .ribbon { position: absolute; top: 20px; right: -35px; transform: rotate(45deg); background: var(--accent); color: var(--text); padding: 5px 40px; font-weight: bold; font-size: 0.9rem; }
@@ -49,9 +66,10 @@
         .info-item h4 { color: var(--primary); margin-bottom: 0.5rem; }
         .disclaimer { text-align: center; margin-top: 3rem; font-size: 0.9rem; color: #666; background: #fff3cd; padding: 1rem; border-radius: 5px; }
         
-        /* Footer */
+        /* Footer Consistente */
         footer { background: var(--primary-dark); color: var(--white); padding: 2rem 0; text-align: center; margin-top: 2rem; }
         footer a { color: var(--white); text-decoration: none; margin: 0 10px; }
+        footer a:hover { color: var(--accent); }
         
         /* WhatsApp Float */
         .whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25d366; color: var(--white); border-radius: 50%; text-align: center; font-size: 2rem; line-height: 60px; box-shadow: 0 5px 20px rgba(37,211,102,0.4); z-index: 999; }
@@ -64,6 +82,7 @@
 </head>
 <body>
 
+<!-- Header -->
 <header>
     <div class="header-top">
         <div class="container">
@@ -78,14 +97,18 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#quienes-somos">Quiénes Somos</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="tarifas.html" style="color: var(--primary); font-weight: bold;">Tarifas</a></li>
+                <li><a href="index.html#galeria">Galería</a></li>
+                <li><a href="index.html#opiniones">Opiniones</a></li>
                 <li><a href="contacto.html" class="btn-primary">Contacto</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
+<!-- Hero Section -->
 <section class="hero">
     <div class="container">
         <h1><i class="fas fa-tag"></i> Tarifas 2026</h1>
@@ -93,6 +116,7 @@
     </div>
 </section>
 
+<!-- Pricing Content -->
 <section class="pricing-section">
     <div class="container">
         <div class="pricing-grid">
@@ -173,15 +197,18 @@
     </div>
 </section>
 
+<!-- Footer -->
 <footer>
     <div class="container">
         <p>&copy; 2026 CAI CAMPÓN ASESORES, S.L. | 
         <a href="aviso-legal.html">Aviso Legal</a> | 
         <a href="politica-privacidad.html">Privacidad</a> | 
-        <a href="politica-cookies.html">Cookies</a></p>
+        <a href="politica-cookies.html">Cookies</a> | 
+        <a href="accesibilidad.html">Accesibilidad</a></p>
     </div>
 </footer>
 
+<!-- WhatsApp Float -->
 <a href="https://wa.me/34914300012" class="whatsapp-float" target="_blank" title="Chatea por WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
 </body>

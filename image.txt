@@ -1,0 +1,7 @@
+logo-campon.png → Imagen ID 0 (Logo azul Campón Asesores)
+
+
+area-trabajo.jpg → Imagen ID 1 u 8 (Área trabajo)
+sala-reuniones.jpg → Imagen ID 5 (Sala reuniones)
+recepcion.jpg → Imagen ID 6 (Recepción)
+despacho.jpg → Imagen ID 9 (Despacho)
