@@ -86,24 +86,32 @@
 <header>
     <div class="header-top">
         <div class="container">
-            <i class="fas fa-phone"></i> <a href="tel:914300012">91 430 00 12</a> | 
-            <i class="fas fa-envelope"></i> <a href="mailto:cai@camponasesores.es">cai@camponasesores.es</a>
+            <div>
+                <i class="fas fa-phone"></i> <a href="tel:+34914300012">91 430 00 12</a>
+                <i class="fas fa-envelope" style="margin-left: 1rem;"></i> <a href="mailto:cai@camponasesores.es">cai@camponasesores.es</a>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i> Calle Alto del León 12, Madrid
+            </div>
         </div>
     </div>
     <div class="container">
         <nav>
-            <div class="logo">
-                <img src="logo-campon.png" alt="Campón Asesores">
+            <!-- Logo en texto (igual que index.html) -->
+            <div class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-briefcase" style="color: var(--primary); font-size: 1.5rem;"></i>
+                <span style="font-weight: 700; color: var(--primary); font-size: 1.3rem;">Campón Asesores</span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="index.html#quienes-somos">Quiénes Somos</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="tarifas.html" style="color: var(--primary); font-weight: bold;">Tarifas</a></li>
+                <li><a href="tarifas.html">Tarifas</a></li>
                 <li><a href="index.html#galeria">Galería</a></li>
                 <li><a href="index.html#opiniones">Opiniones</a></li>
                 <li><a href="contacto.html" class="btn-primary">Contacto</a></li>
             </ul>
+            <button class="mobile-menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
         </nav>
     </div>
 </header>
